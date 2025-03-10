@@ -1,7 +1,7 @@
 import os
 import cv2
 import face_recognition
-from face_utils_upspeed import load_face_library, process_frame_scaled, draw_results
+from face_utils import load_face_library, process_frame_scaled, draw_results
 
 if __name__ == "__main__":
     # 加载人脸库
@@ -36,4 +36,3 @@ if __name__ == "__main__":
             cv2.imshow("Face Recognition", result_image)
             cv2.waitKey(0)
     cv2.destroyAllWindows()
-    
